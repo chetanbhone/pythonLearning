@@ -1,0 +1,10 @@
+print("enter the values seperated by spaces")
+lst=[int(val) for val in input().split()]
+pos=tuple((filter((lambda x:x>0),lst)))
+neg=tuple((filter((lambda k: k<0), lst)))
+print("-"*40)
+print("original list {} ".format(lst))
+print("----"*40)
+print("list of positive numbers {}".format(pos))
+print("-----"*40)
+print("list vof negative numbers {}".format(neg))
